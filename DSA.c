@@ -1,6 +1,6 @@
 // DSA 450 coding challenge: https://docs.google.com/spreadsheets/d/1dQawcrqlTwBCq8bUIzXRIKJd-8AJqnyg/edit#gid=1869443171
 
-// ############################################################################################
+// ################################################################################################
 //  1. reverse the array
 //  Input  : arr[] = {1, 2, 3}  Output : arr[] = {3, 2, 1}
 //  It also can be done by using a new array(copy to new one) then print the new one
@@ -28,7 +28,7 @@
 // }
 // }
 
-// #####################################################################################
+// ####################################################################################################
 
 // 2. Find the maximum and minimum element in an array
 // Input: arr[] = {3, 5, 4, 1, 9} Output: Minimum : 1 Maximum : 9
@@ -44,7 +44,7 @@
 //         else if (min > a[i])
 //         { min = a[i];}}
 //     printf("Max= %d\nMin= %d\n",max,min);}
-// #####################################################################################
+// ####################################################################################################
 
 // 3. Find the "Kth" max and min element of an array
 // Input: N = 6 arr[] = 7 10 4 3 20 15 K = 3 Output : 7 Explanation : 3rd smallest element in the given  array is 7.
@@ -115,5 +115,45 @@
 //     printf("\n%dth max is %d\n%dth min is %d\n",k,a[n-k],k,a[k-1]);
 // }
 
-// #####################################################################################
+// ###################################################################################################
 
+// 4 Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo
+// I use two array. one copied worked then paste it. Output 0,1,2 only. I initially made all element 1 then replace with 2 or 0 if found.
+// #include <stdio.h>
+// int main()
+// {
+
+//     int n;
+//     scanf("%d", &n);
+//     int a[n], b[n];
+
+//     for (int i = 0; i < n; i++)
+//     { scanf("%d", &a[i]);}
+
+//     for (int i = 0; i < n; i++)
+//     {  b[i] = 1; }
+
+//     int zero = 0, two = n - 1;
+//     for (int low = 0; low < n; low++)
+//     {
+//         if (a[low] == 0)
+//         {
+//             b[zero] = a[low];
+//             zero++;
+//         }
+//         else if (a[low] == 2)
+//         {
+//             b[two] = a[low];
+//             two--;
+//         }
+//         else
+//         {
+//             continue;
+//         }
+//     }
+//     for (int i = 0; i < n; i++)
+//     { a[i] = b[i]; }
+    
+//     for (int i = 0; i < n; i++)
+//     { printf("%d ",a[i]);}  
+// }
