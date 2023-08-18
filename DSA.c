@@ -229,18 +229,45 @@
 //     { printf("%d ", totalArr[i]);  }
 // }
 
+// ###################################################################################################
 // 7. Write a program to cyclically rotate an array by one. input: A[] = {9, 8, 7, 6, 4, 2, 1, 3} Output: {3, 9, 8, 7, 6, 4, 2, 1}
-#include <stdio.h>
-int main()
-{ int n;
-    scanf("%d", &n);
-    int a[n];
-    for (int i = 0; i < n; i++)
-    { scanf("%d", &a[i]); }
-    int tem = a[n - 1];
-for (int i = n-1; i >0 ; i--)
-{a[i]=a[i-1]; }
-    a[0]=tem;
-for (int i = 0; i < n; i++)
-{printf("%d ",a[i]);}}
+// #include <stdio.h>
+// int main()
+// { int n;
+//     scanf("%d", &n);
+//     int a[n];
+//     for (int i = 0; i < n; i++)
+//     { scanf("%d", &a[i]); }
+//     int tem = a[n - 1];
+// for (int i = n-1; i >0 ; i--)
+// {a[i]=a[i-1]; }
+//     a[0]=tem;
+// for (int i = 0; i < n; i++)
+// {printf("%d ",a[i]);}}
+
+// ###################################################################################################
+
+// 8. find Largest sum contiguous Subarray [V. IMP]
+// input: Arr[] = {1,2,3,-2,5} output: 9
+// maximum sum in subarray
+// #include <stdio.h>
+// #include <math.h>
+// int main()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     int a[n],sum = 0, max = -INFINITY;;
+//     for (int i = 0; i < n; i++)
+//     { scanf("%d", &a[i]); }
+
+//     for (int i = 0; i < n; i++)
+//     {   sum += a[i];
+//         if (sum > max)
+//         { max = sum; }
+//         if (sum < 0)
+//         {  sum = 0;  } }
+//     printf("%d\n", max);
+// }
+
+// ###################################################################################################
 
