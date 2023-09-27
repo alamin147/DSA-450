@@ -1,5 +1,5 @@
 .vscode
 .gitignore
 BachgoldProblem.c
-DSA.exe
-test.txt
+*.exe
+*.txt
